@@ -31,11 +31,18 @@ public class JwtHandler implements JwtService {
     @Value("${issuer:https://theretailinsights.com/}")
     private String issuer;
 
+    @Value("${jwt.token.access.expiration:10}")
+    private Integer accessTokenExpTime;
+
+    @Value("${jwt.token.refresh.expiration:10}")
+    private Integer refreshTokenExpTime;
+
+
     @Override
     public Function<Map<String, Object>, String> signAccessToken() {
         return payloadMap ->
                 create()
-                        .withExpiresAt(now().plus(ofMinutes(10)))
+                        .withExpiresAt(now().plus(ofMinutes(accessTokenExpTime)))
                         .withPayload(payloadMap)
                         .withIssuer(issuer)
                         .sign(HMAC512(secret));
@@ -47,7 +54,7 @@ public class JwtHandler implements JwtService {
                 create()
                         .withSubject(auditor)
                         .withClaim(AXIS_ROTATION_TYPE, AXIS)
-                        .withExpiresAt(now().plus(ofMinutes(10)))
+                        .withExpiresAt(now().plus(ofMinutes(refreshTokenExpTime)))
                         .withIssuer(issuer)
                         .sign(HMAC512(secret));
     }
@@ -64,9 +71,14 @@ public class JwtHandler implements JwtService {
                         .toList()).build();
     }
 
+    @Override
+    public String getAuditor(String token) {
+        return this.decodedToken(token).getSubject();
+    }
+
     private DecodedJWT decodedToken(String token) {
         return getAlgorithm()
-                .andThen(algorithm -> require(algorithm).withIssuer(issuer).acceptExpiresAt(MINUTES.toMinutes(10)).build())
+                .andThen(algorithm -> require(algorithm).withIssuer(issuer).acceptExpiresAt(MINUTES.toMinutes(accessTokenExpTime)).build())
                 .andThen(jwtVerifier -> jwtVerifier.verify(token))
                 .apply(secret);//function starts here
     }

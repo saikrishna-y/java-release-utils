@@ -11,7 +11,7 @@
     </parent>
     <groupId>com.retailinsights.commons</groupId>
     <artifactId>jwt-utils</artifactId>
-    <version>0.1</version>
+    <version>0.2</version>
     <name>jwt-utils</name>
     <description>Common Module for JWT.</description>
 
@@ -57,6 +57,4 @@
             <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
-
-
 </project>

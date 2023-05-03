@@ -15,6 +15,8 @@ public interface JwtService {
 
     TokenInfo getTokenInfo(String token);
 
+    String getAuditor(String token);
+
     default String trimToken(String token) {
         return token.substring(BEARER_KEY.length());
     }
