@@ -1,0 +1,43 @@
+{
+  "groups": [],
+  "properties": [
+    {
+      "name": "jwt.token.access.expiration",
+      "type": "java.lang.Integer",
+      "defaultValue": 10
+    },
+    {
+      "name": "jwt.token.refresh.expiration",
+      "type": "java.lang.Integer",
+      "defaultValue": 10
+    }
+  ],
+  "hints": [
+    {
+      "name": "jwt.token.access.expiration",
+      "values": [
+        {
+          "value": 10,
+          "description":"Expiration for 10M."
+        },
+        {
+          "value": 120,
+          "description":"Expiration for 120M."
+        }
+      ]
+    },
+    {
+      "name": "jwt.token.refresh.expiration",
+      "values": [
+        {
+          "value": 10,
+          "description":"Expiration for 10M."
+        },
+        {
+          "value": 120,
+          "description":"Expiration for 120M."
+        }
+      ]
+    }
+  ]
+}
