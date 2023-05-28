@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.retailinsights</groupId>
         <artifactId>corp-parent-pom</artifactId>
-        <version>1.0</version>
+        <version>0.1</version>
         <relativePath/>
     </parent>
     <groupId>com.retailinsights.commons</groupId>
