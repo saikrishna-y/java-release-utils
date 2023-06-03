@@ -1,5 +1,17 @@
 package com.retailinsights.jwt.service;
 
+/*-
+ * *****
+ * jwt-utils
+ * -------
+ * Copyright (C) 2021 - 2023 RetailInsights
+ * -------
+ * This software is owned exclusively by RetailInsights.
+ * As such, this software may not be copied, modified, or
+ * distributed without permission from RetailInsights.
+ * ======
+ */
+
 import com.retailinsights.jwt.utils.TokenInfo;
 
 import java.util.Map;
