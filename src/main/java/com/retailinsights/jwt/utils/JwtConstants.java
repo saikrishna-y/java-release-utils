@@ -1,5 +1,17 @@
 package com.retailinsights.jwt.utils;
 
+/*-
+ * *****
+ * jwt-utils
+ * -------
+ * Copyright (C) 2021 - 2023 RetailInsights
+ * -------
+ * This software is owned exclusively by RetailInsights.
+ * As such, this software may not be copied, modified, or
+ * distributed without permission from RetailInsights.
+ * ======
+ */
+
 import lombok.experimental.UtilityClass;
 
 @UtilityClass
