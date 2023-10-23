@@ -35,7 +35,7 @@
 
     <properties>
         <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
-        <ri.sm.dependencies.version>0.3</ri.sm.dependencies.version>
+        <ri.sm.dependencies.version>0.1</ri.sm.dependencies.version>
     </properties>
 
     <dependencies>
