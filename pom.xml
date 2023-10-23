@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.ri.commons</groupId>
     <artifactId>jwt-utils</artifactId>
-    <version>0.2</version>
+    <version>0.3-SNAPSHOT</version>
     <name>jwt-utils</name>
     <description>Common Module for JWT.</description>
 
@@ -28,7 +28,7 @@
     </developers>
 
     <scm>
-        <tag>SM-jwt-utils-0.2</tag>
+        <tag>HEAD</tag>
         <developerConnection>scm:git:git@gitlab.com:sales_retail/${project.artifactId}.git</developerConnection>
         <url>https://gitlab.com/sales_retail/${project.artifactId}</url>
     </scm>
