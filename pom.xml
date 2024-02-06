@@ -14,19 +14,6 @@
     <name>jwt-utils</name>
     <description>Common Module for JWT.</description>
 
-    <developers>
-        <developer>
-            <id>aditya0000</id>
-            <name>Aditya Joshi</name>
-            <email>aditya@theretailinsights.com</email>
-            <organization>RetailInsights</organization>
-            <organizationUrl>https://retailinsights.com/</organizationUrl>
-            <roles>
-                <role>Software Engineer</role>
-            </roles>
-        </developer>
-    </developers>
-
     <scm>
         <tag>HEAD</tag>
         <developerConnection>scm:git:git@gitlab.com:sales_retail/${project.artifactId}.git</developerConnection>
