@@ -16,8 +16,8 @@
 
     <scm>
         <tag>HEAD</tag>
-        <developerConnection>scm:git:git@gitlab.com:sales_retail/${project.artifactId}.git</developerConnection>
-        <url>https://gitlab.com/sales_retail/${project.artifactId}</url>
+        <developerConnection>scm:git:git@github.com:saikrishna-y/java-utils.git</developerConnection>
+        <url>git@github.com:saikrishna-y/java-utils.git</url>
     </scm>
 
     <properties>
